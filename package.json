@@ -1,0 +1,23 @@
+{
+  "name": "contact-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "20",
+    "npm": "8"
+  },
+  "scripts": {
+    "dev": "tsx watch ./server.ts",
+    "start": "tsx ./server.ts",
+    "build:cd": "npm i --production"
+  },
+  "dependencies": {
+    "@qelos/plugin-play": "^3.4.1",
+    "tsx": "^3.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "concurrently": "^8.2.2"
+  }
+}
