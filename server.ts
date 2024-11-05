@@ -1,5 +1,12 @@
-import { start } from '@qelos/plugin-play'
+import cors from '@fastify/cors'
+import { start, on, LifecycleEvent } from '@qelos/plugin-play'
 import './endpoints'
+
+
+on(LifecycleEvent.appMounted, ({ app }) => {
+  console.log('added cors');
+  app.register(cors);
+})
 
 start({
   manifest: {
