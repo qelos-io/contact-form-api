@@ -13,8 +13,8 @@
     "build:cd": "npm i --production"
   },
   "dependencies": {
-    "@fastify/cors": "^10.0.1",
-    "@qelos/plugin-play": "^3.7.2",
+    "@fastify/cors": "^8.0.0",
+    "@qelos/plugin-play": "^3.7.4",
     "tsx": "^3.14.0"
   },
   "devDependencies": {

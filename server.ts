@@ -18,7 +18,7 @@ start({
     accessTokenSecret: process.env.ACCESS_TOKEN_SECRET || 'demo-secret',
     refreshTokenSecret: process.env.REFRESH_TOKEN_SECRET || 'refresh-token-secret',
     qelosUrl: process.env.QELOS_URL || 'https://app.qelos.io/',
-    qelosUsername: process.env.QELOS_USER || 'david+tester@qelos.io',
-    qelosPassword: process.env.QELOS_PASSWORD || 'david+tester@qelos.io',
+    qelosUsername: process.env.QELOS_USER || 'david_contact_local@qelos.io',
+    qelosPassword: process.env.QELOS_PASSWORD || 'david_contact_local@qelos.io',
   },
 });
