@@ -7,12 +7,20 @@ addEndpoint('/api/contact', {
 
     const ip = req.ip;
     const userAgent = req.headers['user-agent'];
-    const { fullName, email, content } = req.body || {} as any;
 
-    if (!(ip && userAgent && fullName?.trim().includes(' ') && content?.trim() && email?.includes('@'))) {
+    if (!(ip && userAgent)) {
       res.statusCode = 400;
       return {
-        message: 'all fields are mandatory'
+        message: 'cannot identify request',
+      };
+    }
+
+    const { fullName, email, content } = req.body || {} as any;
+
+    if (!(fullName?.trim().includes(' ') && content?.trim() && email?.includes('@'))) {
+      res.statusCode = 400;
+      return {
+        message: 'all fields are mandatory',
       };
     }
     try {

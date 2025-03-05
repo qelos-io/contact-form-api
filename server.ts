@@ -20,5 +20,8 @@ start({
     qelosUrl: process.env.QELOS_URL || 'https://app.qelos.io/',
     qelosUsername: process.env.QELOS_USER || 'david_contact_local@qelos.io',
     qelosPassword: process.env.QELOS_PASSWORD || 'david_contact_local@qelos.io',
+    sdkOptions: {
+      forceRefresh: true
+    }
   },
 });

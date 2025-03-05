@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@fastify/cors": "^8.0.0",
-    "@qelos/plugin-play": "^3.7.4",
+    "@qelos/plugin-play": "^3.7.7",
     "tsx": "^3.14.0"
   },
   "devDependencies": {

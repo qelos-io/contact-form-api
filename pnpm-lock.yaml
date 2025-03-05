@@ -12,8 +12,8 @@ importers:
         specifier: ^8.0.0
         version: 8.5.0
       '@qelos/plugin-play':
-        specifier: ^3.7.4
-        version: 3.7.4
+        specifier: ^3.7.7
+        version: 3.7.7
       tsx:
         specifier: ^3.14.0
         version: 3.14.0
@@ -195,20 +195,20 @@ packages:
     resolution: {integrity: sha512-9I2Zn6+NJLfaGoz9jN3lpwDgAYvfGeNYdbAIjJOqzs4Tpc+VU3Jqq4IofSUBKajiDS8k9fZIg18/z13mpk1bsA==}
     engines: {node: '>=8'}
 
-  '@qelos/cache-manager@3.7.4':
-    resolution: {integrity: sha512-trwl+9ZG1E26G1IW3WnVZrn8FT8mp6nJ/2+GjqrCEhCCKEXYS+cZ2Y8QW4js+JXU08IeFogk/FTxmnc3QBZCeQ==}
+  '@qelos/cache-manager@3.7.7':
+    resolution: {integrity: sha512-5jhWeRRi3O0s5beoCo8G6vopaN3t6Oj7McKaKlAxhvJ79STJWRQVKi3JoXCricFTSWhWsWQONhh0Q5+Uf/fsmg==}
 
-  '@qelos/global-types@3.7.4':
-    resolution: {integrity: sha512-kNOReEYwmGKu13CuVUcHSiqnH4ZemtGBgSVILeiTGL1yTlJjmUUCtAMA+yZK3oXFPwkfuKCxekP5tLHnSrMObg==}
+  '@qelos/global-types@3.7.7':
+    resolution: {integrity: sha512-1xN8BsAomQzCCRQUsL1x79TK1vKhWrDqVBqUrOm8wQjwsCEp6TwMYtxZPotWujXzl2jw0L+RXsIwmHmd+ByQGw==}
 
-  '@qelos/plugin-play@3.7.4':
-    resolution: {integrity: sha512-0SrO0Csi1oLOHaYLv+lVpJN/g/I9vmyr/C/3uGzNxEuVFb1/5mFA6ahO3qfafB3hQo+iC8xNg8T+zymsZPEuEg==}
+  '@qelos/plugin-play@3.7.7':
+    resolution: {integrity: sha512-IVN5qqOwQY1ZRKFA/dG+MUwSEq7VC7FQVK9+olbJzZR/mhMbcZw/SxlWDDssNirwv8+IMtMgkGfwCSpLh/FEvw==}
 
-  '@qelos/sdk@3.7.4':
-    resolution: {integrity: sha512-w29bEqelLqsYs1gwWTLit1x0mMWeJbCLKuxxixcrXfJDBQou+LmXkk5xo1cA8bc+9bwMyEtUCKrNNxs16ceBzg==}
+  '@qelos/sdk@3.7.7':
+    resolution: {integrity: sha512-ko46HBI/Glo0FpBCB9GeF7Gl3jarm4mTsDpwHtA/vSk49jTpC4618Xp2erE/hwPcGXpvy5FkLmqN15oIlR2EXw==}
 
-  '@qelos/web-sdk@3.7.4':
-    resolution: {integrity: sha512-0MDzz/agoHmkCDC9iVRTAy1DHE6c3Rd3cwWbo9TDl587twUuZUTqw/aD+jjagjd2noI1aWQYcT7cWMx00AYlQw==}
+  '@qelos/web-sdk@3.7.7':
+    resolution: {integrity: sha512-ax2e7uyM4IQYRzi9oHpSck/36xCiQURcu8bu+QuWWO3hBGkI+Skd/pJicf067fVnIYkqOVuLbA8ZVnbFkxJh5g==}
 
   '@types/node@20.17.1':
     resolution: {integrity: sha512-j2VlPv1NnwPJbaCNv69FO/1z4lId0QmGvpT41YxitRtWlg96g/j8qcv2RKsLKe2F6OJgyXhupN1Xo17b2m139Q==}
@@ -815,28 +815,28 @@ snapshots:
 
   '@lukeed/ms@2.0.2': {}
 
-  '@qelos/cache-manager@3.7.4':
+  '@qelos/cache-manager@3.7.7':
     dependencies:
       redis: 3.1.2
 
-  '@qelos/global-types@3.7.4': {}
+  '@qelos/global-types@3.7.7': {}
 
-  '@qelos/plugin-play@3.7.4':
+  '@qelos/plugin-play@3.7.7':
     dependencies:
       '@fastify/cookie': 8.3.0
       '@fastify/static': 6.12.0
-      '@qelos/cache-manager': 3.7.4
-      '@qelos/sdk': 3.7.4
-      '@qelos/web-sdk': 3.7.4
+      '@qelos/cache-manager': 3.7.7
+      '@qelos/sdk': 3.7.7
+      '@qelos/web-sdk': 3.7.7
       fastify: 4.3.0
       jsonwebtoken: 9.0.2
       undici: 6.20.1
 
-  '@qelos/sdk@3.7.4':
+  '@qelos/sdk@3.7.7':
     dependencies:
-      '@qelos/global-types': 3.7.4
+      '@qelos/global-types': 3.7.7
 
-  '@qelos/web-sdk@3.7.4': {}
+  '@qelos/web-sdk@3.7.7': {}
 
   '@types/node@20.17.1':
     dependencies:
