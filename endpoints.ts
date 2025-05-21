@@ -23,8 +23,19 @@ addEndpoint('/api/contact', {
         message: 'all fields are mandatory',
       };
     }
+    const sdk = getSdk();
+
     try {
-      const data = await getSdk().blueprints.entitiesOf('contact_message').create({
+      const user = await sdk.authentication.getLoggedInUser();
+      if (!user) {
+        throw new Error('user not logged in');
+      }
+    } catch {
+      await sdk.authentication.refreshToken();
+    }
+
+    try {
+      const data = await sdk.blueprints.entitiesOf('contact_message').create({
         bypassAdmin: false,
         workspace: process.env.WORKSPACE_ID || '66b48dea4072ff00110dbddc',
         metadata: {
@@ -39,7 +50,8 @@ addEndpoint('/api/contact', {
       return {
         success: true
       }
-    } catch {
+    } catch (e) {
+      console.log(e);
       res.statusCode = 500;
       return {
         message: 'something went wrong'
